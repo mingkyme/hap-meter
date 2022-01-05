@@ -27,7 +27,7 @@ const currentTemperatureCharacteristic = tMeterService.getCharacteristic(Charact
 currentTemperatureCharacteristic.on(CharacteristicEventTypes.GET, callback => {
     callback(undefined, temperature);
 });
-tAccessory.addService(meterService);
+tAccessory.addService(tMeterService);
 tAccessory.publish({
     username: "17:51:07:F4:BC:9B",
     pincode: "123-45-678",
@@ -43,7 +43,7 @@ const currentRelativeHumidityCharacteristic = hMeterService.getCharacteristic(Ch
 currentRelativeHumidityCharacteristic.on(CharacteristicEventTypes.GET, callback => {
     callback(undefined, humidity);
 });
-hAccessory.addService(meterService);
+hAccessory.addService(hMeterService);
 hAccessory.publish({
     username: "17:51:07:F4:BC:5A",
     pincode: "123-45-678",
