@@ -1,0 +1,15 @@
+{
+  "name": "hap-meter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hap-nodejs": "^0.9.8",
+    "mqtt": "^4.3.2"
+  }
+}
